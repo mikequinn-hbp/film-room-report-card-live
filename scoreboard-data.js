@@ -1,8 +1,8 @@
 export const SCOREBOARD_DATA = {
   title: "Film Room Report Card",
-  stamp: "Live Snapshot - Apr 19, 2026 - 10:31 AM CDT",
+  stamp: "Live Snapshot - Apr 20, 2026 - 08:02 AM CDT",
   subtitle:
-    "Built to track the room, develop future GMs, and show who is moving toward real operator status. Slack activity is live through this morning, and the production modifier is holding the last verified Tekmetric pull.",
+    "Built to track the room, develop future GMs, and show who is moving toward real operator status. Slack activity is live through this morning, and the production modifier is still holding the last verified Tekmetric pull because the fresh Tekmetric refresh did not come through in this run.",
   leadersSummary:
     "The highest grades are going to the people creating visible momentum. They are posting, replying, pushing the room forward, and showing proof of effort instead of staying quiet.",
   bottomSummary:
@@ -40,8 +40,8 @@ export const SCOREBOARD_DATA = {
       grade: "A+",
       label: "Current MVP",
       trend: "up",
-      points: 58,
-      doing: "Leading the live board with the strongest mix of posts, replies, thread action, and room pressure this morning, even while Barker is still chasing store pace.",
+      points: 74,
+      doing: "Still leading the live board with the strongest mix of weekend posts, replies, thread action, and room pressure, even while Barker is still chasing store pace.",
       improve: "Hold the top spot by keeping the room hot and driving Barker closer to the monthly store target."
     },
     {
@@ -49,18 +49,18 @@ export const SCOREBOARD_DATA = {
       grade: "A",
       label: "Right On The Lead",
       trend: "up",
-      points: 45,
+      points: 55,
       doing: "Still pushing hard with strong energy, visible reps, and elite advisor pace on both posted and sold.",
       improve: "A few more real impact touches can swing the board back in his favor and keep both posted and sold pace elite."
     },
     {
-      name: "Andrew Wechter",
-      grade: "B",
-      label: "Fast Riser",
+      name: "Michael Felix",
+      grade: "A",
+      label: "Weekend Surge",
       trend: "up",
-      points: 34,
-      doing: "Stayed on the board with visible engagement and useful replies, but the advisor pace still needs more pressure on both posted and sold.",
-      improve: "Turn the activity into steadier leadership reps and push both posted and total sold harder."
+      points: 52,
+      doing: "Felix made a real weekend jump with strong leadership posts, multiple thread replies, and healthy sold pace.",
+      improve: "Keep stacking visible reps and close the gap on posted sales so the production side matches the room momentum."
     }
   ],
   members: [
@@ -85,9 +85,9 @@ export const SCOREBOARD_DATA = {
     {
       name: "Donovan Penny",
       grade: "A",
-      note: "Pressing the leader • still elite production pace",
+      note: "Pressing the leader • weekend pressure stayed high",
       trend: "up",
-      points: 45,
+      points: 55,
       modifier: "Boost: +3 advisor pace. Posted $126.3k and sold $117.5k vs a $72.0k pace target through Apr 18.",
       doing: "Putting real pressure on the board with visible effort, room energy, and elite posted plus sold pace in Tekmetric.",
       improve: "A few more impact reps can put him right back on top."
@@ -97,9 +97,9 @@ export const SCOREBOARD_DATA = {
       grade: "A+",
       note: "Current MVP • GM score carries extra weight",
       trend: "up",
-      points: 58,
+      points: 74,
       modifier: "Ding: -4 GM leadership modifier. Barker Cypress is at $243.2k posted and $269.5k sold vs a $300.0k pace target. GP% is neutral today until the live end-of-day gross-profit field is confirmed.",
-      doing: "Setting the live pace right now with strong posts, active replies, thread traffic, and real engagement pressure, even while the store side is still below the full GM standard.",
+      doing: "Setting the live pace right now with strong weekend posts, active replies, thread traffic, and real engagement pressure, even while the store side is still below the full GM standard.",
       improve: "Keep pressing the room, but the real jump now is getting Barker back above pace on the store side too."
     },
     {
@@ -113,13 +113,13 @@ export const SCOREBOARD_DATA = {
     },
     {
       name: "Mercedes Mike",
-      grade: "C",
-      note: "Showing signs • $59.7k MTD",
+      grade: "B",
+      note: "Biggest mover • loud weekend push",
       trend: "up",
-      points: 24,
+      points: 48,
       modifier: "Ding: -1 advisor pace. Posted $59.7k and sold $71.9k vs a $72.0k pace target through Apr 18. Sold is close, but posted is still behind.",
-      doing: "Showing more visible energy instead of staying quiet, but he still needs more cars closed to match the sold pace.",
-      improve: "Needs stronger consistency, more written reps, and more posted production to turn solid pace into a real climb."
+      doing: "Made a real move with multiple posts, multiple thread replies, and much louder visible energy across the weekend.",
+      improve: "Needs stronger posted production so the work in the room is matched by the numbers in the shop."
     },
     {
       name: "Jose Garcia",
@@ -133,11 +133,11 @@ export const SCOREBOARD_DATA = {
     {
       name: "Andrew Wechter",
       grade: "B",
-      note: "Still climbing • useful visible reps",
+      note: "Still climbing • steady weekend reps",
       trend: "up",
-      points: 34,
+      points: 44,
       modifier: "Ding: -2 advisor pace. Posted $40.1k and sold $48.2k vs a $72.0k pace target through Apr 18.",
-      doing: "Stayed active with visible engagement, a useful reply, and real production, but both posted and sold are still under pace.",
+      doing: "Stayed active across the weekend with visible engagement and useful replies, but both posted and sold are still under pace.",
       improve: "Needs to turn the pace into stronger leadership reps and steadier follow-through while pushing both numbers up."
     },
     {
@@ -151,32 +151,32 @@ export const SCOREBOARD_DATA = {
     },
     {
       name: "Donnie Davis",
-      grade: "D",
-      note: "GM lane • Woodlands sold pace is strong",
-      trend: "hold",
-      points: 12,
+      grade: "C",
+      note: "GM lane • early Sunday tone-setter",
+      trend: "up",
+      points: 20,
       modifier: "Boost: +4 GM leadership modifier. Woodlands is at $281.1k posted and $339.9k sold vs a $300.0k pace target. GP% is neutral today until the live end-of-day gross-profit field is confirmed.",
-      doing: "Gets a real lift because the store lane is close on posted and already ahead on total sold, which matters more on the GM scale.",
+      doing: "Gets a real lift because the store lane is close on posted and already ahead on total sold, and he opened Sunday by setting a visible tone in the room.",
       improve: "Needs more visible leadership reps in the room and a stronger push to get posted sales clearly over pace."
     },
     {
       name: "David Beckham",
-      grade: "F",
+      grade: "D",
       note: "GM lane • Barker needs lift",
-      trend: "hold",
-      points: 5,
+      trend: "up",
+      points: 12,
       modifier: "Ding: -4 GM leadership modifier. Barker Cypress is at $243.2k posted and $269.5k sold vs a $300.0k pace target. GP% is neutral today until the live end-of-day gross-profit field is confirmed.",
       doing: "Has some visible movement, but not enough to offset a store lane that is still under pace on both posted and total sold.",
       improve: "Needs more visible leadership pressure and a stronger store push fast, because the GM scale hits harder."
     },
     {
       name: "Michael Felix",
-      grade: "B",
-      note: "Felix / Woodlands • big morning push",
+      grade: "A",
+      note: "Felix / Woodlands • huge weekend surge",
       trend: "up",
-      points: 31,
+      points: 52,
       modifier: "Boost: +1 advisor pace. Posted $63.6k and sold $91.9k vs a $72.0k pace target through Apr 18. Sold is ahead, posted is a little behind.",
-      doing: "Made a real jump with a strong leadership post, a useful thread reply, and healthy sold pace, even though posted still trails.",
+      doing: "Made a real weekend jump with strong leadership posts, multiple thread replies, and healthy sold pace, even though posted still trails.",
       improve: "Keep stacking visible reps and close the gap on posted sales so the production side matches the room momentum."
     },
     {
@@ -192,11 +192,11 @@ export const SCOREBOARD_DATA = {
     {
       name: "Niko Sarantidis",
       grade: "B",
-      note: "Biggest mover this morning",
+      note: "Still rising • followed up strong",
       trend: "up",
-      points: 27,
+      points: 38,
       modifier: "Neutral: 0 advisor pace modifier. Posted $68.9k and sold $89.9k vs a $72.0k pace target through Apr 18. Sold is ahead, posted is still under.",
-      doing: "Exploded onto the board with new posts, a live thread, follow-up replies, and stronger visible presence, while the sold pace is already solid.",
+      doing: "Backed up yesterday's jump with another strong post this morning and kept the visible presence moving, while the sold pace is already solid.",
       improve: "Keep the pressure on, keep replying, and push the posted side higher so the production lane catches up too."
     },
     {
@@ -223,10 +223,10 @@ export const SCOREBOARD_DATA = {
       name: "David Guillen",
       grade: "F",
       note: "GM lane • NOW Cypress off pace",
-      trend: "hold",
-      points: 0,
+      trend: "up",
+      points: 6,
       modifier: "Ding: -5 GM leadership modifier. NOW Cypress is at $192.2k posted and $245.6k sold vs a $300.0k pace target. GP% is neutral today until the live end-of-day gross-profit field is confirmed.",
-      doing: "Not creating enough visible activity in the room yet, and the store lane is materially behind the monthly pace target.",
+      doing: "Showed back up in the room, but the store lane is still materially behind the monthly pace target and the GM standard is still the toughest one on the board.",
       improve: "Needs more leadership presence in the room and a much stronger store push, because the GM standard is the hardest one on the board."
     },
     {
@@ -261,11 +261,11 @@ export const SCOREBOARD_DATA = {
     {
       name: "Gino PCC",
       grade: "D",
-      note: "Finally on the board",
+      note: "More visible over the weekend",
       trend: "up",
-      points: 8,
+      points: 18,
       modifier: "Ding: -1 advisor pace. Posted $54.0k and sold $78.0k vs a $72.0k pace target through Apr 18. Sold is fine, posted is still behind.",
-      doing: "Got onto the board with a live post, and the sold pace is close enough to matter even though posted is still behind.",
+      doing: "Got more visible over the weekend with multiple posts, and the sold pace is close enough to matter even though posted is still behind.",
       improve: "Needs to jump in again quickly with posts, replies, visible wins, and a little more posted production."
     },
     {
@@ -280,13 +280,22 @@ export const SCOREBOARD_DATA = {
     },
     {
       name: "Ed Hebert",
-      grade: "F",
-      note: "GM lane • JB strong sold pace",
-      trend: "new",
-      points: 4,
+      grade: "D",
+      note: "GM lane • brought morning store leadership",
+      trend: "up",
+      points: 15,
       modifier: "Boost: +3 GM leadership modifier. JB Auto Care is at $276.2k posted and $332.8k sold vs a $300.0k pace target. GP% is neutral today until the live end-of-day gross-profit field is confirmed.",
-      doing: "Gets credit for a store lane with healthy sold pace, but the room still has not seen enough visible leadership action yet.",
+      doing: "Gets credit for a store lane with healthy sold pace and added a strong early morning leadership update from the shop.",
       improve: "Needs visible reps in the room and a little more posted pressure so the full GM score starts working for him."
+    },
+    {
+      name: "Ser Gray",
+      grade: "F",
+      note: "New join • now on the board",
+      trend: "new",
+      points: 1,
+      doing: "Ser Gray joined the channel on this live rerun and is now officially being tracked on the board.",
+      improve: "Needs a first post, a reply, or visible engagement to start moving up."
     },
     {
       name: "Luis Gonzalez",
