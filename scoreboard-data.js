@@ -1,8 +1,8 @@
 export const SCOREBOARD_DATA = {
   title: "Film Room Report Card",
-  stamp: "Live Snapshot - Apr 20, 2026 - 11:11 AM CDT",
+  stamp: "Live Snapshot - Apr 21, 2026 - 08:06 AM CDT",
   subtitle:
-    "Built to track the room, develop future GMs, and show who is moving toward real operator status. Slack activity is audited through late this morning, the production modifier is still holding the last verified Tekmetric pull because the fresh Tekmetric refresh did not come through in this run, and Zoom training attendance from today's call has been added as a light bonus.",
+    "Built to track the room, develop future GMs, and show who is moving toward real operator status. Slack activity is audited through the 8:06 AM run, the production modifier is still holding the last verified Tekmetric pull because the fresh Tekmetric refresh did not come through in this run, and Zoom training attendance from the confirmed call has been added as a light bonus.",
   leadersSummary:
     "The highest grades are going to the people creating visible momentum. They are posting, replying, pushing the room forward, and showing proof of effort instead of staying quiet.",
   bottomSummary:
@@ -41,8 +41,8 @@ export const SCOREBOARD_DATA = {
       grade: "A+",
       label: "Current MVP",
       trend: "up",
-      points: 82,
-      doing: "Still leading the live board with the strongest mix of weekend posts, replies, late-morning thread activity, live Zoom training attendance, and room pressure, even while Barker is still chasing store pace.",
+      points: 110,
+      doing: "Still leading the live board with the strongest mix of weekend posts, replies, early-morning thread activity, Zoom training attendance, and room pressure, even while Barker is still chasing store pace.",
       improve: "Hold the top spot by keeping the room hot and driving Barker closer to the monthly store target."
     },
     {
@@ -50,8 +50,8 @@ export const SCOREBOARD_DATA = {
       grade: "A",
       label: "Right On The Lead",
       trend: "up",
-      points: 67,
-      doing: "Still pushing hard with strong energy, visible reps, live Zoom training attendance, and multiple late-morning thread touches on top of elite advisor pace on both posted and sold.",
+      points: 82,
+      doing: "Still pushing hard with strong energy, visible reps, Zoom training attendance, an early-morning post, and thread follow-up on top of elite advisor pace on both posted and sold.",
       improve: "A few more real impact touches can swing the board back in his favor and keep both posted and sold pace elite."
     },
     {
@@ -59,8 +59,8 @@ export const SCOREBOARD_DATA = {
       grade: "A",
       label: "Weekend Surge",
       trend: "up",
-      points: 57,
-      doing: "Felix made a real weekend jump with strong leadership posts, multiple thread replies, live Zoom training attendance, and healthy sold pace.",
+      points: 79,
+      doing: "Felix made a real jump with strong leadership posts, multiple thread replies, Zoom training attendance, and another morning leadership post before the run.",
       improve: "Keep stacking visible reps and close the gap on posted sales so the production side matches the room momentum."
     },
     {
@@ -68,8 +68,8 @@ export const SCOREBOARD_DATA = {
       grade: "A",
       label: "Biggest Mover",
       trend: "up",
-      points: 60,
-      doing: "Mercedes kept climbing after the Zoom with more live thread participation and steady room energy.",
+      points: 66,
+      doing: "Mercedes kept climbing after the Zoom with another commitment reply and steady room energy.",
       improve: "A little more posted production and another strong visible push can keep him inside the top tier fight."
     }
   ],
@@ -95,11 +95,11 @@ export const SCOREBOARD_DATA = {
     {
       name: "Donovan Penny",
       grade: "A",
-      note: "Pressing the leader • Zoom showed up and kept talking in thread",
+      note: "Pressing the leader • morning post and thread follow-up",
       trend: "up",
-      points: 67,
-      modifier: "Boost: +4 Zoom training attendance for showing up live. Live audit boost: extra thread follow-through after the call. Tekmetric boost: +3 advisor pace. Posted $126.3k and sold $117.5k vs a $72.0k pace target through Apr 18.",
-      doing: "Putting real pressure on the board with visible effort, room energy, live training attendance, extra thread follow-up after the call, and elite posted plus sold pace in Tekmetric.",
+      points: 82,
+      modifier: "Boost: +4 Zoom training attendance for showing up live. Live audit boost: early-morning post plus thread follow-through before the 8:06 AM run. Tekmetric boost: +3 advisor pace. Posted $126.3k and sold $117.5k vs a $72.0k pace target through Apr 18.",
+      doing: "Putting real pressure on the board with visible effort, room energy, live training attendance, early-morning follow-up, and elite posted plus sold pace in Tekmetric.",
       improve: "A few more impact reps can put him right back on top."
     },
     {
@@ -107,9 +107,9 @@ export const SCOREBOARD_DATA = {
       grade: "A+",
       note: "Current MVP • GM score carries extra weight",
       trend: "up",
-      points: 82,
-      modifier: "Mixed: +4 Zoom training attendance for showing up live. Live audit boost: more late-morning thread leadership. Tekmetric ding: -4 GM leadership modifier. Barker Cypress is at $243.2k posted and $269.5k sold vs a $300.0k pace target. GP% is neutral today until the live end-of-day gross-profit field is confirmed.",
-      doing: "Setting the live pace right now with strong weekend posts, active replies, late-morning thread leadership, live training attendance, and real engagement pressure, even while the store side is still below the full GM standard.",
+      points: 110,
+      modifier: "Mixed: +4 Zoom training attendance for showing up live. Live audit boost: another strong early-morning leadership post, thread activity, and engagement before the 8:06 AM run. Tekmetric ding: -4 GM leadership modifier. Barker Cypress is at $243.2k posted and $269.5k sold vs a $300.0k pace target. GP% is neutral today until the live end-of-day gross-profit field is confirmed.",
+      doing: "Setting the live pace right now with strong weekend posts, active replies, early-morning thread leadership, live training attendance, and real engagement pressure, even while the store side is still below the full GM standard.",
       improve: "Keep pressing the room, but the real jump now is getting Barker back above pace on the store side too."
     },
     {
@@ -124,11 +124,11 @@ export const SCOREBOARD_DATA = {
     {
       name: "Mercedes Mike",
       grade: "A",
-      note: "Biggest mover • loud weekend push plus late-morning thread reps",
+      note: "Kept climbing • Zoom plus commitment reply",
       trend: "up",
-      points: 60,
-      modifier: "Mixed: +4 Zoom training attendance for showing up live. Live audit boost: multiple late-morning thread replies after the call. Tekmetric ding: -1 advisor pace. Posted $59.7k and sold $71.9k vs a $72.0k pace target through Apr 18. Sold is close, but posted is still behind.",
-      doing: "Made a real move with multiple posts, multiple thread replies, live training attendance, and another round of strong late-morning engagement across the room.",
+      points: 66,
+      modifier: "Mixed: +4 Zoom training attendance for showing up live. Live audit boost: another commitment reply after the last audit. Tekmetric ding: -1 advisor pace. Posted $59.7k and sold $71.9k vs a $72.0k pace target through Apr 18. Sold is close, but posted is still behind.",
+      doing: "Made a real move with multiple posts, multiple thread replies, live training attendance, and another visible commitment reply.",
       improve: "Needs stronger posted production so the work in the room is matched by the numbers in the shop."
     },
     {
@@ -162,71 +162,71 @@ export const SCOREBOARD_DATA = {
     {
       name: "Donnie Davis",
       grade: "C",
-      note: "GM lane • early Sunday tone-setter plus extra thread follow-up",
+      note: "GM lane • Woodlands sold pace is strong",
       trend: "up",
-      points: 30,
-      modifier: "Boost: +4 Zoom training attendance for showing up live. Live audit boost: added another visible reply after the call. Tekmetric boost: +4 GM leadership modifier. Woodlands is at $281.1k posted and $339.9k sold vs a $300.0k pace target. GP% is neutral today until the live end-of-day gross-profit field is confirmed.",
-      doing: "Gets a real lift because the store lane is close on posted and already ahead on total sold, and he opened Sunday by setting a visible tone in the room, on the training call, and again in thread after it.",
+      points: 24,
+      modifier: "Boost: +4 Zoom training attendance for showing up live. Tekmetric boost: +4 GM leadership modifier. Woodlands is at $281.1k posted and $339.9k sold vs a $300.0k pace target. GP% is neutral today until the live end-of-day gross-profit field is confirmed.",
+      doing: "Gets a real lift because the store lane is close on posted and already ahead on total sold, and he has been visible enough to stay in the mix.",
       improve: "Needs more visible leadership reps in the room and a stronger push to get posted sales clearly over pace."
     },
     {
       name: "David Beckham",
-      grade: "D",
-      note: "GM lane • Barker needs lift but Zoom showed up",
+      grade: "C",
+      note: "GM lane • Barker needs lift but he answered the standard",
       trend: "up",
-      points: 16,
-      modifier: "Mixed: +4 Zoom training attendance for showing up live. Tekmetric ding: -4 GM leadership modifier. Barker Cypress is at $243.2k posted and $269.5k sold vs a $300.0k pace target. GP% is neutral today until the live end-of-day gross-profit field is confirmed.",
-      doing: "Has some visible movement and showed up for the training call, but not enough to offset a store lane that is still under pace on both posted and total sold.",
+      points: 24,
+      modifier: "Mixed: +4 Zoom training attendance for showing up live. Live audit boost: answered the program standard with a real commitment reply. Tekmetric ding: -4 GM leadership modifier. Barker Cypress is at $243.2k posted and $269.5k sold vs a $300.0k pace target. GP% is neutral today until the live end-of-day gross-profit field is confirmed.",
+      doing: "Showed up for the training call and added a real commitment reply, but still needs to offset a store lane that is under pace on both posted and total sold.",
       improve: "Needs more visible leadership pressure and a stronger store push fast, because the GM scale hits harder."
     },
     {
       name: "Michael Felix",
       grade: "A",
-      note: "Felix / Woodlands • huge weekend surge plus Zoom showed up",
+      note: "Felix / Woodlands • biggest morning jump",
       trend: "up",
-      points: 57,
-      modifier: "Boost: +4 Zoom training attendance for showing up live. Tekmetric boost: +1 advisor pace. Posted $63.6k and sold $91.9k vs a $72.0k pace target through Apr 18. Sold is ahead, posted is a little behind.",
-      doing: "Made a real weekend jump with strong leadership posts, multiple thread replies, live training attendance, and healthy sold pace, even though posted still trails.",
+      points: 79,
+      modifier: "Boost: +4 Zoom training attendance for showing up live. Live audit boost: two strong replies to the program standard plus another morning leadership post before the 8:06 AM run. Tekmetric boost: +1 advisor pace. Posted $63.6k and sold $91.9k vs a $72.0k pace target through Apr 18. Sold is ahead, posted is a little behind.",
+      doing: "Made the biggest morning jump with strong leadership posts, multiple thread replies, live training attendance, and healthy sold pace, even though posted still trails.",
       improve: "Keep stacking visible reps and close the gap on posted sales so the production side matches the room momentum."
     },
     {
       name: "William Luebano",
-      grade: "D",
-      note: "Showed up on Zoom • answered in thread and climbed some",
+      grade: "C",
+      note: "Showed up on Zoom • accepted the challenge",
       trend: "up",
-      points: 19,
-      modifier: "Boost: +4 Zoom training attendance for showing up live. Live audit boost: late-morning thread reply with strong engagement. Tekmetric neutral: 0 advisor pace modifier. Posted $71.0k and sold $91.9k vs a $72.0k pace target through Apr 18. Sold is good, posted is just under.",
-      doing: "Showed up for the live training call, came back with a live thread reply after it, and the sold pace in Tekmetric is still strong.",
+      points: 26,
+      modifier: "Boost: +4 Zoom training attendance for showing up live. Live audit boost: accepted the program standard in thread before this run. Tekmetric neutral: 0 advisor pace modifier. Posted $71.0k and sold $91.9k vs a $72.0k pace target through Apr 18. Sold is good, posted is just under.",
+      doing: "Showed up for the live training call, accepted the challenge in thread, and the sold pace in Tekmetric is still strong.",
       improve: "Needs another strong wave of visible activity and a little more posted production so the room can see the same pace the numbers are showing."
     },
     {
       name: "Niko Sarantidis",
-      grade: "B",
-      note: "Still rising • followed up strong and showed up on Zoom",
+      grade: "A",
+      note: "Still rising • morning post plus thread reply",
       trend: "up",
-      points: 42,
-      modifier: "Boost: +4 Zoom training attendance for showing up live. Tekmetric neutral: 0 advisor pace modifier. Posted $68.9k and sold $89.9k vs a $72.0k pace target through Apr 18. Sold is ahead, posted is still under.",
-      doing: "Backed up yesterday's jump with another strong post this morning, showed up on the live training call, and kept the visible presence moving, while the sold pace is already solid.",
+      points: 59,
+      modifier: "Boost: +4 Zoom training attendance for showing up live. Live audit boost: another post and a thread reply before the 8:06 AM run. Tekmetric neutral: 0 advisor pace modifier. Posted $68.9k and sold $89.9k vs a $72.0k pace target through Apr 18. Sold is ahead, posted is still under.",
+      doing: "Backed up the earlier jump with another strong post, a live thread reply, Zoom attendance, and a sold pace that is already solid.",
       improve: "Keep the pressure on, keep replying, and push the posted side higher so the production lane catches up too."
     },
     {
       name: "JT",
-      grade: "F",
-      note: "Quiet here, but showed up on Zoom",
+      grade: "D",
+      note: "Showed up on Zoom and added a thread reply",
       trend: "hold",
-      points: 7,
-      modifier: "Boost: +4 Zoom training attendance for showing up live. Tekmetric boost: +2 advisor pace. Posted $74.2k and sold $77.4k vs a $72.0k pace target through Apr 18.",
-      doing: "Showed up for the live training call, but still is not giving the room enough visible action right now, even though both posted and sold pace are running ahead in Tekmetric.",
+      points: 13,
+      modifier: "Boost: +4 Zoom training attendance for showing up live. Live audit boost: added a visible thread reply after the last audit. Tekmetric boost: +2 advisor pace. Posted $74.2k and sold $77.4k vs a $72.0k pace target through Apr 18.",
+      doing: "Showed up for the live training call and added a visible thread reply, while both posted and sold pace are running ahead in Tekmetric.",
       improve: "Needs more visible reps, stronger communication, and follow-through in the room."
     },
     {
       name: "Victor Naji",
-      grade: "F",
-      note: "GM lane • Sienna is mixed but Zoom showed up",
+      grade: "D",
+      note: "GM lane • Sienna is mixed but added visible proof",
       trend: "hold",
-      points: 5,
-      modifier: "Boost: +4 Zoom training attendance for showing up live. Tekmetric neutral: 0 GM leadership modifier. NOW Sienna is at $245.6k posted and $305.4k sold vs a $300.0k pace target. GP% is neutral today until the live end-of-day gross-profit field is confirmed.",
-      doing: "The sold side is doing its part, and he showed up for the training call, but the posted side and the room activity still are not strong enough to lift the grade.",
+      points: 16,
+      modifier: "Boost: +4 Zoom training attendance for showing up live. Live audit boost: added visible proof in the room after the last audit. Tekmetric neutral: 0 GM leadership modifier. NOW Sienna is at $245.6k posted and $305.4k sold vs a $300.0k pace target. GP% is neutral today until the live end-of-day gross-profit field is confirmed.",
+      doing: "The sold side is doing its part, he showed up for the training call, and he added visible proof in the room, but the posted side still needs pressure.",
       improve: "Needs more leadership reps in the room and stronger posted execution at the store."
     },
     {
@@ -270,7 +270,7 @@ export const SCOREBOARD_DATA = {
     },
     {
       name: "Gino PCC",
-      grade: "D",
+      grade: "C",
       note: "More visible over the weekend and showed up on Zoom",
       trend: "up",
       points: 22,
@@ -290,12 +290,12 @@ export const SCOREBOARD_DATA = {
     },
     {
       name: "Ed Hebert",
-      grade: "C",
-      note: "GM lane • brought morning store leadership and a fresh live win",
+      grade: "B",
+      note: "GM lane • real shop leadership updates",
       trend: "up",
-      points: 21,
-      modifier: "Boost: live audit credit for another real leadership post from the shop. Tekmetric boost: +3 GM leadership modifier. JB Auto Care is at $276.2k posted and $332.8k sold vs a $300.0k pace target. GP% is neutral today until the live end-of-day gross-profit field is confirmed.",
-      doing: "Gets credit for a store lane with healthy sold pace and kept the room updated again with a fresh leadership win from the shop.",
+      points: 45,
+      modifier: "Boost: live audit credit for multiple real shop leadership updates. Tekmetric boost: +3 GM leadership modifier. JB Auto Care is at $276.2k posted and $332.8k sold vs a $300.0k pace target. GP% is neutral today until the live end-of-day gross-profit field is confirmed.",
+      doing: "Gets credit for a store lane with healthy sold pace and multiple real updates from the shop, including labor-rate and GP-focused leadership work.",
       improve: "Needs visible reps in the room and a little more posted pressure so the full GM score starts working for him."
     },
     {
