@@ -28,17 +28,26 @@ const EXCLUDED_FROM_REPORT = new Set([
   "Glenn Piccolo",
   "Charlie Zlatkos",
   "Joe Adams",
+  "Patty Adams",
+  "Gary Walker",
+  "Bill Broussard",
+  "Bill Brusard",
+  "Bill Bersard",
   "Michael Floyd",
   "Jose Garcia"
 ]);
 const MVP_EXCLUDED = new Set([
   "Mike Quinn",
   "Joe Adams",
+  "Patty Adams",
   "Charlie Zlatkos",
   "Todd Hayes",
-  "Bill Bersard",
+  "Gary Walker",
+  "Bill Broussard",
+  "Bill Brusard",
   "Bill Bersard",
   "Jose Garcia",
+  "Glenn Piccolo",
   "Michael Floyd"
 ]);
 
