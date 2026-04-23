@@ -1,8 +1,8 @@
 export const SCOREBOARD_DATA = {
   title: "Film Room Report Card",
-  stamp: "Live Snapshot - Apr 23, 2026 - 09:11 AM CDT",
+  stamp: "Live Snapshot - Apr 23, 2026 - 11:39 AM CDT",
   subtitle:
-    "Fresh Slack activity is audited through the 9:11 AM run. This morning's named video-call attendees were Luis Gonzalez, chaz Shope, and Andrew Wechter, and that live-call bonus is weighted heavier than Slack-only activity. Slack posts, replies, reactions given, reactions received, and the last verified Tekmetric modifier are still tracked. Tekmetric stayed on the last verified pull because the fresh refresh did not come through.",
+    "Fresh Slack activity is audited through the 11:39 AM correction pass. This morning's named video-call attendees were Luis Gonzalez, chaz Shope, Andrew Wechter, and Donnie Davis, and that live-call bonus is weighted heavier than Slack-only activity. Slack posts, replies, reactions given, reactions received, and the last verified Tekmetric modifier are still tracked. Tekmetric stayed on the last verified pull because the fresh refresh did not come through.",
   leadersSummary:
     "The highest grades are going to the people who are showing up live, staying active in the room, and backing that effort with visible leadership or production pressure.",
   bottomSummary:
@@ -167,12 +167,12 @@ export const SCOREBOARD_DATA = {
     },
     {
       name: "Donnie Davis",
-      grade: "C",
-      note: "GM lane - Woodlands sold pace strong",
-      trend: "down",
-      points: 32,
-      modifier: "Mixed: not on today's named video-call list, so no live-call bonus was added on this run. Slack note: still active through reactions even without a big new post on this pass. Tekmetric held from last verified pull: Woodlands sold pace was strong at $339.9k vs a $300.0k target, while posted was close but under at $281.1k. GP% stayed neutral because the live gross-profit field was not confirmed.",
-      doing: "Strong reaction-given activity and Woodlands sold pace keep him in the middle of the board.",
+      grade: "B",
+      note: "GM lane - on today's named video call",
+      trend: "up",
+      points: 72,
+      modifier: "Boost: +40 named video-call attendance this morning because live participation outweighs Slack-only activity. Slack note: still active through reactions even without a big new post on this pass. Tekmetric held from last verified pull: Woodlands sold pace was strong at $339.9k vs a $300.0k target, while posted was close but under at $281.1k. GP% stayed neutral because the live gross-profit field was not confirmed.",
+      doing: "Donnie gets the live-call bonus back on top of strong reaction-given activity and Woodlands sold pace, which pushes him back into the B tier.",
       improve: "Needs more GM voice in the room and posted sales over pace, because leading a shop carries a heavier standard."
     },
     {
