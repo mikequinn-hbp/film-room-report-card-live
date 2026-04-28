@@ -57,57 +57,72 @@ render();
 
 function render() {
   const members = (SCOREBOARD_DATA.members || []).filter(shouldDisplayMember);
-  const mvp = buildMvp(members);
-  const mvpPoints = mvp?.points || 0;
-  const rankedMembers = buildTierRankList(members);
+  const rankedMembers = buildRankedMembers(members);
   const rankLookup = new Map(rankedMembers.map((member, index) => [member.name, index + 1]));
   const tiers = buildTiers(members, rankLookup);
+  const mvp = rankedMembers.find((member) => !MVP_EXCLUDED.has(member.name)) || null;
+  const spotlight = buildSpotlight(mvp, rankedMembers);
 
   app.innerHTML = `
-    <div class="report-shell">
-      <div class="report-shell__glow report-shell__glow--left"></div>
-      <div class="report-shell__glow report-shell__glow--right"></div>
+    <div class="arena-shell">
+      <div class="arena-shell__glow arena-shell__glow--left"></div>
+      <div class="arena-shell__glow arena-shell__glow--right"></div>
 
-      <header class="hero-card">
-        <div class="hero-card__scanline"></div>
-        <div class="hero-card__meta">
+      <header class="hero-board">
+        <div class="hero-board__scanline"></div>
+        <div class="hero-board__meta">
           <span class="eyebrow">Film Room Report Card</span>
-          <span class="stamp">${escapeHtml(SCOREBOARD_DATA.stamp)}</span>
+          <span class="stamp">${escapeHtml(SCOREBOARD_DATA.stamp || "")}</span>
         </div>
-        <div class="hero-card__body">
-          <div class="hero-card__copy">
-            <h1>${escapeHtml(SCOREBOARD_DATA.title)}</h1>
-            <p>${escapeHtml(SCOREBOARD_DATA.subtitle)}</p>
+        <div class="hero-board__body">
+          <div class="hero-board__copy">
+            <span class="hero-board__kicker">Live Jumbotron</span>
+            <h1>${escapeHtml(SCOREBOARD_DATA.title || "Film Room Report Card")}</h1>
+            <p>${escapeHtml(SCOREBOARD_DATA.subtitle || "")}</p>
           </div>
-          <div class="hero-card__stats">
-            ${renderHeroStat("Mode", "Live Link", "Digital board active")}
-            ${renderHeroStat("Current MVP", mvp ? mvp.name : "TBD", mvp ? `${mvp.grade} • ${mvpPoints} pts` : "No leader yet")}
-            ${renderHeroStat("Visible", String(members.length), "Ranked on the board")}
+          <div class="hero-board__stats">
+            ${renderHeroPanel("Current MVP", mvp ? mvp.name : "TBD", mvp ? `${mvp.grade} • ${mvp.points} pts` : "No leader yet")}
+            ${renderHeroPanel("Visible Board", String(members.length), "Ranked live right now")}
+            ${renderHeroPanel("Board Style", "Jumbotron", "Permanent live link")}
+          </div>
+        </div>
+        <div class="ticker">
+          <span class="ticker__label">Live Feed</span>
+          <div class="ticker__viewport">
+            <div class="ticker__track">
+              <span>${escapeHtml(buildTickerCopy(mvp, spotlight))}</span>
+              <span>${escapeHtml(buildTickerCopy(mvp, spotlight))}</span>
+            </div>
           </div>
         </div>
       </header>
 
-      <section class="mvp-section">
+      <section class="spotlight-section">
         <div class="section-head">
           <div>
-            <span class="section-kicker">Leaderboard</span>
-            <h2>MVP</h2>
-            <p>The live points leader on the board. This spot belongs to whoever is stacking the strongest visible score right now.</p>
+            <span class="section-kicker">Top Board</span>
+            <h2>Jumbotron Leaders</h2>
           </div>
         </div>
-        ${mvp ? renderMvp(mvp) : renderEmptyMvp()}
+        <div class="spotlight-grid">
+          ${spotlight.map((member, index) => renderSpotlightCard(member, index + 1)).join("")}
+        </div>
       </section>
 
-      <section class="tiers-stack">
+      <section class="tier-deck">
         ${tiers.map((tier) => renderTier(tier)).join("")}
       </section>
 
-      <section class="grading-card">
-        <span class="section-kicker">Grading Standard</span>
-        <h2>${escapeHtml(SCOREBOARD_DATA.gradingTitle || "How I Grade This")}</h2>
+      <section class="grading-board">
+        <div class="section-head">
+          <div>
+            <span class="section-kicker">Grading Standard</span>
+            <h2>${escapeHtml(SCOREBOARD_DATA.gradingTitle || "How I Grade This")}</h2>
+          </div>
+        </div>
         <p>${escapeHtml(SCOREBOARD_DATA.gradingIntro || "")}</p>
         <ul class="grading-list">
-          ${SCOREBOARD_DATA.basis.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
+          ${(SCOREBOARD_DATA.basis || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
         </ul>
         <p>${escapeHtml(SCOREBOARD_DATA.gradingStandard || "")}</p>
       </section>
@@ -115,28 +130,38 @@ function render() {
   `;
 }
 
-function renderHeroStat(label, value, meta) {
+function renderHeroPanel(label, value, meta) {
   return `
-    <div class="hero-stat">
-      <span class="hero-stat__label">${escapeHtml(label)}</span>
-      <strong class="hero-stat__value">${escapeHtml(value)}</strong>
-      <span class="hero-stat__meta">${escapeHtml(meta)}</span>
+    <div class="hero-panel">
+      <span class="hero-panel__label">${escapeHtml(label)}</span>
+      <strong class="hero-panel__value">${escapeHtml(value)}</strong>
+      <span class="hero-panel__meta">${escapeHtml(meta)}</span>
     </div>
   `;
 }
 
-function buildMvp(members) {
-  return members
-    .slice()
-    .sort(compareMembers)
-    .find((member) => !MVP_EXCLUDED.has(member.name)) || null;
+function buildTickerCopy(mvp, spotlight) {
+  const parts = [];
+  if (mvp) {
+    parts.push(`${mvp.name} leads the Film Room at ${mvp.points} points.`);
+  }
+  if (spotlight[1]) {
+    parts.push(`${spotlight[1].name} is chasing at ${spotlight[1].points} points.`);
+  }
+  if (spotlight[2]) {
+    parts.push(`${spotlight[2].name} is still climbing at ${spotlight[2].points}.`);
+  }
+  if (SCOREBOARD_DATA.leadersSummary) {
+    parts.push(SCOREBOARD_DATA.leadersSummary);
+  }
+  return parts.join("  •  ");
 }
 
 function shouldDisplayMember(member) {
   return !EXCLUDED_FROM_REPORT.has(member.name);
 }
 
-function buildTierRankList(members) {
+function buildRankedMembers(members) {
   return GRADE_ORDER.flatMap((grade) =>
     members
       .filter((member) => member.grade === grade)
@@ -161,50 +186,53 @@ function buildTiers(members, rankLookup) {
     .filter((tier) => tier.members.length > 0);
 }
 
-function renderMvp(member) {
-  const points = member.points || 0;
+function buildSpotlight(mvp, rankedMembers) {
+  const spotlight = [];
+  const seen = new Set();
+
+  if (mvp) {
+    spotlight.push(mvp);
+    seen.add(mvp.name);
+  }
+
+  for (const member of rankedMembers) {
+    if (seen.has(member.name)) {
+      continue;
+    }
+    spotlight.push(member);
+    seen.add(member.name);
+    if (spotlight.length === 4) {
+      break;
+    }
+  }
+
+  return spotlight;
+}
+
+function renderSpotlightCard(member, rank) {
   return `
-    <article class="mvp-card mvp-card--${toGradeClass(member.grade)}">
-      <div class="mvp-card__top">
-        <div>
-          <span class="section-kicker">Top Eligible Performer</span>
-          <h3>${escapeHtml(member.name)}</h3>
-          <span class="member-note">${escapeHtml(member.note || "")}</span>
-        </div>
-        <div class="mvp-card__meta">
+    <article class="spotlight-card spotlight-card--rank-${rank}">
+      <div class="spotlight-card__top">
+        <span class="spotlight-rank">#${rank}</span>
+        <div class="spotlight-card__chips">
           <span class="grade-chip grade-chip--${toGradeClass(member.grade)}">${escapeHtml(member.grade)}</span>
-          <span class="score-chip">${escapeHtml(points)} pts</span>
+          <span class="score-chip">${escapeHtml(member.points || 0)} pts</span>
           ${renderTrendChip(member.trend)}
         </div>
       </div>
-      <p class="mvp-callout">${escapeHtml(member.name)} is holding the top live score right now with ${escapeHtml(points)} points.</p>
+      <h3>${escapeHtml(member.name)}</h3>
+      <span class="member-note">${escapeHtml(member.note || "")}</span>
       ${renderModifierLine(member)}
-      <p class="member-line"><strong>Doing:</strong> ${escapeHtml(member.doing || member.label || member.note || "")}</p>
+      <p class="member-line"><strong>Doing:</strong> ${escapeHtml(member.doing || "Not enough visible work yet.")}</p>
       <p class="member-line"><strong>Step Up:</strong> ${escapeHtml(member.improve || "Keep stacking visible reps.")}</p>
-    </article>
-  `;
-}
-
-function renderEmptyMvp() {
-  return `
-    <article class="mvp-card">
-      <div class="mvp-card__top">
-        <div>
-          <span class="section-kicker">Top Eligible Performer</span>
-          <h3>No MVP Yet</h3>
-        </div>
-      </div>
-      <p class="mvp-callout">No eligible person has built a lead on the live points board yet.</p>
-      <p class="member-line"><strong>Doing:</strong> No eligible non-leadership person has separated from the field yet.</p>
-      <p class="member-line"><strong>Step Up:</strong> More visible reps, stronger follow-through, and more proof can earn this spot.</p>
     </article>
   `;
 }
 
 function renderTier(tier) {
   return `
-    <section class="tier-section tier-section--${toGradeClass(tier.grade)}">
-      <div class="tier-section__head">
+    <section class="tier-board tier-board--${toGradeClass(tier.grade)}">
+      <div class="tier-board__head">
         <div>
           <span class="section-kicker">${escapeHtml(tier.label)}</span>
           <h2>${escapeHtml(tier.description)}</h2>
@@ -219,7 +247,6 @@ function renderTier(tier) {
 }
 
 function renderMember(member) {
-  const points = member.points || 0;
   return `
     <article class="member-card">
       <div class="member-card__top">
@@ -232,7 +259,7 @@ function renderMember(member) {
         </div>
         <div class="member-card__meta">
           <span class="grade-chip grade-chip--${toGradeClass(member.grade)}">${escapeHtml(member.grade)}</span>
-          <span class="score-chip">${escapeHtml(points)} pts</span>
+          <span class="score-chip">${escapeHtml(member.points || 0)} pts</span>
           ${renderTrendChip(member.trend)}
         </div>
       </div>
