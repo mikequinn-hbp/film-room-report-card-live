@@ -1,7 +1,7 @@
 export const SCOREBOARD_DATA = {
   "title": "Film Room Report Card",
   "stamp": "Live Snapshot - Apr 28, 2026 - 9:03 AM CDT",
-  "subtitle": "Fresh Slack activity is audited through the Apr 28 9:03 AM CDT pass. Today's confirmed live training call attendees were William Luebano, Victor Naji, Niko Sarantidis, Michael Felix, Michael Alf, Luis Gonzalez, Joe Torres, David Guillen, Gino, Ed Hebert, Donovan Penny, Donnie Davis, Demetrius Latkos, David Beckham, chaz Shope, and Andrew Wechter. Live attendance is weighted heavier than Slack-only activity, while Tekmetric remains a secondary modifier. This pass uses fresh live GM Tekmetric payment totals where available, and advisor service-writer modifiers stay on the last verified advisor pull unless a cleaner live number is exposed.",
+  "subtitle": "Fresh Slack activity is audited through the Apr 28 9:03 AM CDT pass. Today's confirmed live training call attendees were William Luebano, Victor Naji, Niko Sarantidis, Michael Felix, Michael Alf, Luis Gonzalez, Joe Torres, David Guillen, Gino, Ed Hebert, Donovan Penny, Donnie Davis, Dimitris Zlatkos, David Beckham, chaz Shope, and Andrew Wechter. Live attendance is weighted heavier than Slack-only activity, while Tekmetric remains a secondary modifier. This pass uses fresh live GM Tekmetric payment totals where available, and advisor service-writer modifiers stay on the last verified advisor pull unless a cleaner live number is exposed.",
   "leadersSummary": "The highest grades are going to the people who showed up live today, stayed visible in Slack, and are backing it up with operator-level follow-through.",
   "bottomSummary": "The bottom of the board is still for people without live attendance, too little visible room action, or not enough proof that their production and leadership are carrying into the room.",
   "gradingTitle": "How I Grade This",
@@ -220,13 +220,13 @@ export const SCOREBOARD_DATA = {
       "improve": "Needs more visible GM voice in the room and JB still needs to finish above pace."
     },
     {
-      "name": "Demetrius Latkos",
+      "name": "Dimitris Zlatkos",
       "grade": "D",
       "note": "Live attendee - first real jump",
       "trend": "up",
       "points": 40,
       "modifier": "Boost: +40 from today's confirmed live training call attendance. Slack stayed light outside the attendance bump. Tekmetric stayed neutral because no clean live advisor or store match was verified on this pass.",
-      "doing": "Demetrius finally got a real score because he showed up live today.",
+      "doing": "Dimitris finally got a real score because he showed up live today.",
       "improve": "Now turn the attendance into posts, replies, and visible follow-through so the score can keep climbing."
     },
     {
