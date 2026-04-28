@@ -3,12 +3,105 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="dark">
-    <title>Film Room Report Card</title>
-    <link rel="stylesheet" href="./scoreboard.css">
+    <title>Courtside: The Film Room</title>
+    <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <main id="scoreboard-app" class="scoreboard-app"></main>
-    <script type="module" src="./scoreboard.js"></script>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero__eyebrow">Earned Access Only</div>
+        <h1>Courtside: The Film Room</h1>
+        <p class="hero__lede">
+          This is the qualification screen before training. Only serious operators who are
+          ready to be fully honest, fully coachable, and fully committed should move forward.
+        </p>
+        <div class="hero__panel">
+          <p>Automatic qualification requires both:</p>
+          <ul>
+            <li>a strong total score</li>
+            <li>a strong commitment score on the hard-standard questions</li>
+            <li>an honest answer pattern, not a page full of easy 5s</li>
+          </ul>
+        </div>
+      </header>
+
+      <main class="layout">
+        <section class="form-panel">
+          <form id="application-form" novalidate>
+            <section class="section-card">
+              <div class="section-card__header">
+                <span class="section-card__step">Step 1</span>
+                <h2>Applicant Details</h2>
+              </div>
+              <div class="identity-grid">
+                <label>
+                  <span>Full name</span>
+                  <input type="text" name="fullName" required>
+                </label>
+                <label>
+                  <span>Email</span>
+                  <input type="email" name="email" required>
+                </label>
+                <label>
+                  <span>Phone</span>
+                  <input type="tel" name="phone" required>
+                </label>
+                <label>
+                  <span>Current role</span>
+                  <input type="text" name="currentRole" required>
+                </label>
+                <label class="identity-grid__full">
+                  <span>Store or business</span>
+                  <input type="text" name="storeOrBusiness" required>
+                </label>
+              </div>
+            </section>
+
+            <section class="section-card">
+              <div class="section-card__header">
+                <span class="section-card__step">Step 2</span>
+                <h2>Pre-Training Qualification Questions</h2>
+              </div>
+              <p class="section-card__note">
+                Before anybody gets a seat in training, he has to clear this screen honestly. Each question has its own answer language. A `5` should be rare and only used when the wording fits you cleanly even on a hard week.
+              </p>
+              <div id="questions" class="questions"></div>
+            </section>
+
+            <div class="submit-row">
+              <div>
+                <p class="submit-row__title">When you submit, the app will score whether the applicant qualifies before training.</p>
+                <p class="submit-row__note">If the qualification standard is not met, the applicant will be told to contact Mike Quinn privately.</p>
+              </div>
+              <button type="submit" id="submit-button">Submit for Qualification</button>
+            </div>
+          </form>
+        </section>
+
+        <aside class="status-panel">
+          <div class="status-card">
+            <div class="status-card__eyebrow">Before Training</div>
+            <h2>Qualification Standard</h2>
+            <div id="program-summary" class="program-summary"></div>
+          </div>
+
+          <div class="status-card">
+            <div class="status-card__eyebrow">Application Result</div>
+            <h2>Training Qualification</h2>
+            <div id="result-card" class="result-card result-card--idle">
+              <p>Complete the application to see whether the applicant qualifies for training.</p>
+            </div>
+          </div>
+
+          <div class="status-card">
+            <div class="status-card__eyebrow">How To Answer</div>
+            <h2>Answer Guide</h2>
+            <div id="scale-guide" class="scale-guide"></div>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <script type="module" src="./app.js"></script>
   </body>
-  </html>
+</html>

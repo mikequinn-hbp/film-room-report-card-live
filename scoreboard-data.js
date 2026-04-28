@@ -1,29 +1,23 @@
 export const SCOREBOARD_DATA = {
-  title: "Film Room Report Card",
-  stamp: "Live Snapshot - Apr 23, 2026 - 11:39 AM CDT",
-  subtitle:
-    "Fresh Slack activity is audited through the 11:39 AM correction pass. This morning's named video-call attendees were Luis Gonzalez, chaz Shope, Andrew Wechter, and Donnie Davis, and that live-call bonus is weighted heavier than Slack-only activity. Slack posts, replies, reactions given, reactions received, and the last verified Tekmetric modifier are still tracked. Tekmetric stayed on the last verified pull because the fresh refresh did not come through.",
-  leadersSummary:
-    "The highest grades are going to the people who are showing up live, staying active in the room, and backing that effort with visible leadership or production pressure.",
-  bottomSummary:
-    "The lowest grades are landing on people with too little visible action, no confirmed live attendance on this morning's named call, or not enough proof that the work is carrying into the room.",
-  gradingTitle: "How I Grade This",
-  gradingIntro:
-    "This report card is weighted around live Film Room participation first. Confirmed Zoom attendance is a major score driver, Slack engagement is still important, and Tekmetric production remains a secondary modifier. Advisor production is a lighter modifier built off posted plus total sold pace. GM production is weighted harder because GMs are leading full stores. Today the fresh Tekmetric pull returned fetch failed again, so production modifiers are held from the last verified pull instead of guessed.",
-  gradingStandard:
-    "This is not an easy grading scale. It is meant to be honest and difficult, like trying out for the Patriots, Warriors, Bulls, or Lakers. The standard is high on purpose so the right people can get better, move forward, and become the best.",
-  tierDescriptions: {
+  "title": "Film Room Report Card",
+  "stamp": "Live Snapshot - Apr 28, 2026 - 8:10 AM CDT",
+  "subtitle": "Fresh Slack activity is audited through the Apr 28 8:10 AM CDT pass. The latest named live-training attendee list shared in this thread was Luis Gonzalez, chaz Shope, Andrew Wechter, and Donnie Davis, so that live-attendance bonus remains weighted heavier than Slack-only activity. Slack posts, replies, reactions given, reactions received, and the last verified Tekmetric modifier are still tracked. Tekmetric fetch failed again on this run, so production modifiers are held from the last verified pull instead of guessed.",
+  "leadersSummary": "The highest grades are going to the people who are showing up live, staying active in the room, and backing that effort with visible leadership or production pressure.",
+  "bottomSummary": "The lowest grades are landing on people with too little visible action, no confirmed live attendance on this morning's named call, or not enough proof that the work is carrying into the room.",
+  "gradingTitle": "How I Grade This",
+  "gradingIntro": "This report card is weighted around live Film Room participation first. Confirmed live-training attendance is a major score driver, Slack engagement is still important, and Tekmetric production remains a secondary modifier. Advisor production is a lighter modifier built off posted plus total sold pace. GM production is weighted harder because GMs are leading full stores. On this Apr 28 run the fresh Tekmetric pull failed again, so production modifiers are still held from the last verified pull instead of guessed.",
+  "gradingStandard": "This is not an easy grading scale. It is meant to be honest and difficult, like trying out for the Patriots, Warriors, Bulls, or Lakers. The standard is high on purpose so the right people can get better, move forward, and become the best.",
+  "tierDescriptions": {
     "A+": "Setting the pace and defining the room standard.",
-    A: "Strong momentum with real consistency and live training presence.",
-    B: "Active, improving, and showing up for the work.",
-    C: "In the mix, but needs stronger follow-through.",
-    D: "Some signs of life, but not enough pressure yet.",
-    F: "Not enough visible movement on the board."
+    "A": "Strong momentum with real consistency and live training presence.",
+    "B": "Active, improving, and showing up for the work.",
+    "C": "In the mix, but needs stronger follow-through.",
+    "D": "Some signs of life, but not enough pressure yet.",
+    "F": "Not enough visible movement on the board."
   },
-  basisTitle: "What The Grade Reflects",
-  basisIntro:
-    "The board starts with live attendance and visible activity in the room, but the standard is bigger than Slack alone. The grade is meant to represent how each person is showing up, growing, and leading. Advisor production matters, but GM store performance matters more because leadership is responsible for the whole operation.",
-  basis: [
+  "basisTitle": "What The Grade Reflects",
+  "basisIntro": "The board starts with live attendance and visible activity in the room, but the standard is bigger than Slack alone. The grade is meant to represent how each person is showing up, growing, and leading. Advisor production matters, but GM store performance matters more because leadership is responsible for the whole operation.",
+  "basis": [
     "Live Zoom meeting attendance and participation",
     "Participation and engagement in Slack",
     "Posts, replies, reactions given, and reactions received",
@@ -36,244 +30,244 @@ export const SCOREBOARD_DATA = {
     "How teammates and other employees experience you day to day",
     "Signs of leadership, accountability, and operator behavior"
   ],
-  podium: [
+  "podium": [
     {
-      name: "chaz Shope",
-      grade: "A+",
-      label: "Current MVP",
-      trend: "up",
-      points: 225,
-      doing: "Owns the top live score with today's named video-call attendance, major leadership posts, a strong morning reply, room response, and GM-level pressure.",
-      improve: "Keep the room hot and get Barker back above the store pace target."
+      "name": "chaz Shope",
+      "grade": "A+",
+      "label": "Current MVP",
+      "trend": "up",
+      "points": 240,
+      "doing": "Still owns the room with consistent leadership posts, high visibility, and the strongest live score on the board.",
+      "improve": "Keep the leadership standard high, but Barker still needs to get over pace because GM scoring hits harder than advisor scoring."
     },
     {
-      name: "Donovan Penny",
-      grade: "A",
-      label: "Right On The Lead",
-      trend: "hold",
-      points: 111,
-      doing: "Held strong near the top with his earlier leadership push and another visible touch in the room.",
-      improve: "A little more reply volume and visible follow-through can keep the pressure on the MVP spot."
+      "name": "Donovan Penny",
+      "grade": "A",
+      "label": "Still Pressing The Lead",
+      "trend": "up",
+      "points": 126,
+      "doing": "Kept adding leadership pressure and visible room reps, so he is still one of the closest people to the MVP lane.",
+      "improve": "More reply volume and follow-through inside threads can keep the pressure on chaz."
     },
     {
-      name: "Michael Felix",
-      grade: "A",
-      label: "Morning Pressure",
-      trend: "hold",
-      points: 105,
-      doing: "Added another strong morning post and steady room response, but did not get today's named video-call boost.",
-      improve: "Close the posted-sales gap so the production side fully matches the room momentum."
+      "name": "Michael Felix",
+      "grade": "A",
+      "label": "Morning Pressure",
+      "trend": "up",
+      "points": 121,
+      "doing": "Felix kept the pressure on with another strong leadership post and steady room visibility.",
+      "improve": "Close the posted-sales gap so the production side fully matches the room momentum."
     },
     {
-      name: "Andrew Wechter",
-      grade: "B",
-      label: "Biggest Movement",
-      trend: "up",
-      points: 92,
-      doing: "Andrew became the biggest mover on this pass because he was on today's named video call and already had thoughtful room engagement underneath it.",
-      improve: "Keep stacking visible follow-through and better production so this jump turns into an A-tier climb."
+      "name": "Mercedes Mike",
+      "grade": "B",
+      "label": "Biggest Movement",
+      "trend": "up",
+      "points": 84,
+      "doing": "Mercedes made the biggest jump on this rerun by staying all over the room through reactions, encouragement, and visible engagement.",
+      "improve": "Turn some of that energy into more original posts and replies so the climb stays real."
     }
   ],
-  members: [
+  "members": [
     {
-      name: "chaz Shope",
-      grade: "A+",
-      note: "Current MVP - on today's named video call",
-      trend: "up",
-      points: 225,
-      modifier: "Boost: +40 named video-call attendance this morning because live participation outweighs Slack-only activity. Slack boost: added a major accountability post with heavy room response plus a strong morning thread reply. Tekmetric held from last verified pull: Barker Cypress was below pace at $243.2k posted and $269.5k sold vs a $300.0k pace target, so the GM production side remains a harder ding. GP% stayed neutral because the live gross-profit field was not confirmed.",
-      doing: "Setting the tone with real leadership lessons, strong accountability, useful shop examples, fresh morning thread leadership, and room response that still leads the board.",
-      improve: "The board lead is real, but Barker still needs to be pulled above posted and sold pace because GM scoring hits harder."
+      "name": "chaz Shope",
+      "grade": "A+",
+      "note": "Current MVP - still setting the tone",
+      "trend": "up",
+      "points": 240,
+      "modifier": "Boost: confirmed on the latest named live-training attendee list shared in this thread, so the live-room bonus remains in place. Slack boost: stacked another leadership run with a weekend growth post, a fresh good-morning tone-setter, and strong room response. Tekmetric held from the last verified pull: Barker Cypress was still under pace on posted and sold, so the GM production side remains a harder ding. GP% stayed neutral because the live gross-profit field was not confirmed.",
+      "doing": "Still owns the room with consistent leadership posts, high visibility, and the strongest live score on the board.",
+      "improve": "Keep the leadership standard high, but Barker still needs to get over pace because GM scoring hits harder than advisor scoring."
     },
     {
-      name: "Donovan Penny",
-      grade: "A",
-      note: "Still pressing the top",
-      trend: "hold",
-      points: 111,
-      modifier: "Mixed: not on today's named video-call list, so no live-call bonus was added on this run. Slack boost: still has a strong recent leadership post and another visible morning touch. Tekmetric held from last verified pull: advisor pace was a boost with $126.3k posted and $117.5k sold vs a $72.0k pace target through Apr 18.",
-      doing: "Still riding a strong full profile with standout leadership content and visible room activity.",
-      improve: "Reply more inside threads and keep reacting to teammates so the leadership is not only strong posts, but also visible engagement with the room."
+      "name": "Donovan Penny",
+      "grade": "A",
+      "note": "Still chasing the MVP lane",
+      "trend": "up",
+      "points": 126,
+      "modifier": "Mixed: not on the latest named live-training list, so no live-attendance boost is carrying him by itself. Slack boost: kept adding visible leadership touches, a strong weekend post, and live reaction presence around the room. Tekmetric held from the last verified pull: advisor pace stayed ahead of the target, which keeps helping.",
+      "doing": "Still one of the strongest non-MVP voices in the room, and he keeps pairing encouragement with visible reps.",
+      "improve": "Keep stacking replies and leadership follow-through so the push is not only high-energy posts, but also ongoing room pressure."
     },
     {
-      name: "Michael Felix",
-      grade: "A",
-      note: "Felix / Woodlands - strong morning presence",
-      trend: "hold",
-      points: 105,
-      modifier: "Mixed: not on today's named video-call list, so no live-call bonus was added on this run. Slack boost: added another morning post with room response. Tekmetric held from last verified pull: sold pace was ahead at $91.9k vs a $72.0k pace target, but posted was behind at $63.6k.",
-      doing: "Kept stacking leadership with another morning post, earlier thoughtful thread replies, and strong room response.",
-      improve: "Posted sales still need to catch the sold pace. Keep the leadership posts coming, but make sure the closed work follows."
+      "name": "Michael Felix",
+      "grade": "A",
+      "note": "Felix / Woodlands - fresh pressure",
+      "trend": "up",
+      "points": 121,
+      "modifier": "Mixed: not on the latest named live-training list. Slack boost: put up another strong morning leadership post and stayed visible in the room. Tekmetric held from the last verified pull: sold pace was ahead, but posted was still behind, so the production side is a mixed result.",
+      "doing": "Felix kept the pressure on with a fresh leadership post and continues to show the room how he thinks through growth and consistency.",
+      "improve": "Turn the strong sold pace into more posted sales and keep replying underneath other people's posts so the leadership presence gets even fuller."
     },
     {
-      name: "Andrew Wechter",
-      grade: "B",
-      note: "Biggest movement - on today's named video call",
-      trend: "up",
-      points: 92,
-      modifier: "Boost: +40 named video-call attendance this morning because live participation outweighs Slack-only activity. Slack boost: already had a thoughtful culture reply in thread that got room response. Tekmetric held from last verified pull: posted $40.1k and sold $48.2k were both below the $72.0k pace target through Apr 18.",
-      doing: "Andrew became the biggest mover because today's live-call bonus stacked on top of thoughtful room engagement.",
-      improve: "Needs more visible follow-through and a stronger sales pace because both posted and sold were behind on the last verified production pull."
+      "name": "Andrew Wechter",
+      "grade": "A",
+      "note": "Named attendee - still climbing",
+      "trend": "up",
+      "points": 104,
+      "modifier": "Boost: confirmed on the latest named live-training attendee list shared in this thread, so the live-room bonus remains in place. Slack boost: kept showing up with thoughtful posts, morning presence, and real-world help by routing a customer lead back into the room. Tekmetric held from the last verified pull: both posted and sold were below pace, so the production side is still a ding.",
+      "doing": "Andrew keeps turning live attendance into visible leadership reps, and the practical help inside the room gave him another climb.",
+      "improve": "Production still has to close the gap. Keep the live engagement going, but now pair it with stronger closed results."
     },
     {
-      name: "William Luebano",
-      grade: "B",
-      note: "Still active, but not on today's named call",
-      trend: "down",
-      points: 68,
-      modifier: "Mixed: not on today's named video-call list, so no live-call bonus was added on this run. Slack boost: still has useful replies, follow-up posts, and strong room engagement in the recent window. Tekmetric held from last verified pull: sold was strong at $91.9k, posted was just under at $71.0k vs a $72.0k pace target.",
-      doing: "Still has one of the stronger recent Slack profiles because he followed up in threads and posted a real example of helping someone.",
-      improve: "Keep replying instead of only reacting, and nudge posted production over pace so the numbers match the engagement."
+      "name": "William Luebano",
+      "grade": "B",
+      "note": "Still one of the stronger engagement profiles",
+      "trend": "up",
+      "points": 79,
+      "modifier": "Mixed: not on the latest named live-training list. Slack boost: kept one of the heaviest reactions-given profiles in the room and stayed active across the weekend content. Tekmetric held from the last verified pull: sold was strong and posted was near pace, which helps.",
+      "doing": "William keeps showing up on other people's content and still brings steady engagement into the room.",
+      "improve": "Convert more of the energy into replies or original posts so the visibility is not mostly reaction-based."
     },
     {
-      name: "Mercedes Mike",
-      grade: "B",
-      note: "Reaction engine",
-      trend: "down",
-      points: 66,
-      modifier: "Mixed: not on today's named video-call list, so no live-call bonus was added on this run. Slack activity still matters, and his reaction-given profile remains one of the strongest. Tekmetric held from last verified pull: posted was behind at $59.7k, sold was close at $71.9k vs a $72.0k pace target.",
-      doing: "Still carries one of the strongest reaction-given profiles in the room and keeps energy on other people's posts.",
-      improve: "Needs another real post or reply wave today, plus stronger posted production so the score is not carried mostly by reactions."
+      "name": "Mercedes Mike",
+      "grade": "B",
+      "note": "Biggest movement - room energy everywhere",
+      "trend": "up",
+      "points": 84,
+      "modifier": "Mixed: not on the latest named live-training list, so no live-attendance boost. Slack boost: one of the strongest reactions-given profiles in the room again and stayed visibly engaged across the weekend and this morning. Tekmetric held from the last verified pull: posted trailed pace while sold was close, so the production side is still mixed.",
+      "doing": "Mercedes kept the room hot by reacting, encouraging, and staying present on other people's work, which drove one of the biggest jumps on this rerun.",
+      "improve": "Add another clean post or reply wave so the score is not carried mostly by reactions and energy."
     },
     {
-      name: "Niko Sarantidis",
-      grade: "B",
-      note: "Strong base, but missed today's named call",
-      trend: "down",
-      points: 66,
-      modifier: "Mixed: not on today's named video-call list, so no live-call bonus was added on this run. Slack remains solid, but there were no major new visible scoring touches on this pass. Tekmetric held from last verified pull: sold pace was ahead at $89.9k, but posted was still under at $68.9k vs a $72.0k pace target.",
-      doing: "Still holds a strong profile because the earlier takeaways post and solid Slack base carry weight.",
-      improve: "Keep replying in other people's threads and push posted sales over pace so the full profile matches the leadership work."
+      "name": "Niko Sarantidis",
+      "grade": "B",
+      "note": "Momentum back in the room",
+      "trend": "up",
+      "points": 74,
+      "modifier": "Mixed: not on the latest named live-training list. Slack boost: visible learning, sales, and encouragement touches showed up again in the current window. Tekmetric held from the last verified pull: sold pace was ahead, but posted was still under pace, so the production side stays mixed.",
+      "doing": "Niko showed more life again with practical room energy and a stronger visible presence than the last pass.",
+      "improve": "Keep pushing posted sales over pace and add another strong reply or takeaway post so the climb keeps going."
     },
     {
-      name: "Luis Gonzalez",
-      grade: "C",
-      note: "On today's named video call",
-      trend: "up",
-      points: 52,
-      modifier: "Boost: +40 named video-call attendance this morning because live participation outweighs Slack-only activity. Slack remains lighter here, with earlier reply and reaction activity carrying the rest. Tekmetric neutral: no verified advisor/store production modifier matched on the last pull.",
-      doing: "Luis stays competitive because he was on today's named call and already had some room reply and reaction activity.",
-      improve: "Needs a first strong standalone post and more replies so the room can see the leadership work."
+      "name": "Luis Gonzalez",
+      "grade": "C",
+      "note": "Named attendee - still needs more volume",
+      "trend": "up",
+      "points": 58,
+      "modifier": "Boost: confirmed on the latest named live-training attendee list shared in this thread, so the live-room bonus remains in place. Slack stayed lighter in the visible window, so the rest of the score is still being carried more by attendance than by room volume. Tekmetric neutral: no verified advisor or store production modifier matched on the last pull.",
+      "doing": "Luis stays on the board because live attendance matters, even though the visible Slack side was still light on this pass.",
+      "improve": "Needs a stronger standalone post or reply streak so the room can see more operator reps."
     },
     {
-      name: "Gino PCC",
-      grade: "C",
-      note: "Held steady, but no live-call boost today",
-      trend: "down",
-      points: 39,
-      modifier: "Mixed: not on today's named video-call list, so no live-call bonus was added on this run. Slack was quieter on this pass. Tekmetric held from last verified pull: sold was fine at $78.0k, but posted was behind at $54.0k vs a $72.0k pace target.",
-      doing: "Still benefits from the earlier thread-starting energy and the recent room presence.",
-      improve: "Needs stronger posted sales and more replies to other people so the activity turns into a fuller leadership profile."
+      "name": "Gino PCC",
+      "grade": "C",
+      "note": "Steady room presence",
+      "trend": "up",
+      "points": 47,
+      "modifier": "Mixed: not on the latest named live-training list. Slack boost: kept showing up with good-morning posts and room reactions. Tekmetric held from the last verified pull: sold was fine, but posted was under pace.",
+      "doing": "Gino stayed visible and present enough to keep climbing a little on this rerun.",
+      "improve": "Needs more substance posts or replies and better posted pace so the grade can keep climbing."
     },
     {
-      name: "Donnie Davis",
-      grade: "B",
-      note: "GM lane - on today's named video call",
-      trend: "up",
-      points: 72,
-      modifier: "Boost: +40 named video-call attendance this morning because live participation outweighs Slack-only activity. Slack note: still active through reactions even without a big new post on this pass. Tekmetric held from last verified pull: Woodlands sold pace was strong at $339.9k vs a $300.0k target, while posted was close but under at $281.1k. GP% stayed neutral because the live gross-profit field was not confirmed.",
-      doing: "Donnie gets the live-call bonus back on top of strong reaction-given activity and Woodlands sold pace, which pushes him back into the B tier.",
-      improve: "Needs more GM voice in the room and posted sales over pace, because leading a shop carries a heavier standard."
+      "name": "Donnie Davis",
+      "grade": "B",
+      "note": "GM lane - named attendee still matters",
+      "trend": "up",
+      "points": 81,
+      "modifier": "Boost: confirmed on the latest named live-training attendee list shared in this thread, so the live-room bonus remains in place. Slack note: stayed visible through reactions even without a big solo post in the newest window. Tekmetric held from the last verified pull: Woodlands sold pace stayed strong while posted was close but still under pace. GP% stayed neutral because the live gross-profit field was not confirmed.",
+      "doing": "Donnie stays in the middle of the board because the live-training attendance plus steady room engagement keep him in the fight.",
+      "improve": "Needs a stronger GM voice in the room and posted sales over pace, because store leadership carries a heavier standard."
     },
     {
-      name: "David Beckham",
-      grade: "D",
-      note: "GM lane - Barker needs lift",
-      trend: "down",
-      points: 24,
-      modifier: "Mixed: not on today's named video-call list, so no live-call bonus was added on this run. Slack was quiet on this pass outside general room presence. Tekmetric held from last verified pull: Barker Cypress was below pace at $243.2k posted and $269.5k sold vs a $300.0k pace target, so the GM production side remains a harder ding. GP% stayed neutral because the live gross-profit field was not confirmed.",
-      doing: "Still has some room presence, but without the live-call boost the store-side pressure becomes much more visible.",
-      improve: "Needs more visible GM leadership and a real Barker push because both store sales lanes were below pace on the last verified pull."
+      "name": "David Beckham",
+      "grade": "D",
+      "note": "GM lane - some room presence",
+      "trend": "up",
+      "points": 29,
+      "modifier": "Mixed: not on the latest named live-training list. Slack boost: showed a little more life in the room on this rerun. Tekmetric held from the last verified pull: Barker Cypress was below pace on both posted and sold, so the GM production side remains a harder ding. GP% stayed neutral because the live gross-profit field was not confirmed.",
+      "doing": "There was at least more visible room presence on this run, which helped stop the slide.",
+      "improve": "Needs much more GM voice plus Barker over pace, because store leadership is graded harder."
     },
     {
-      name: "David Guillen",
-      grade: "D",
-      note: "GM lane - NOW Cypress off pace",
-      trend: "down",
-      points: 17,
-      modifier: "Mixed: not on today's named video-call list, so no live-call bonus was added on this run. Slack was quiet on this pass. Tekmetric held from last verified pull: NOW Cypress was below pace at $192.2k posted and $245.6k sold vs a $300.0k pace target, so the GM production side remains a harder ding. GP% stayed neutral because the live gross-profit field was not confirmed.",
-      doing: "There was not enough new visible room action on this pass to offset the store pressure.",
-      improve: "Needs much more room leadership and a stronger store push, because the GM scale is harder and NOW Cypress was materially below pace."
+      "name": "David Guillen",
+      "grade": "D",
+      "note": "GM lane - NOW Cypress off pace",
+      "trend": "hold",
+      "points": 17,
+      "modifier": "Mixed: not on the latest named live-training list and there still was not enough visible room activity to offset the store pressure. Tekmetric held from the last verified pull: NOW Cypress stayed below pace on posted and sold, so the GM production side remains a harder ding. GP% stayed neutral because the live gross-profit field was not confirmed.",
+      "doing": "There still was not enough new visible room action on this rerun to offset the store pressure.",
+      "improve": "Needs much more room leadership and a stronger store push, because the GM scale is harder and NOW Cypress was materially below pace on the last verified pull."
     },
     {
-      name: "Cliffon Cantu",
-      grade: "D",
-      note: "Production pace helps, but missed today's named call",
-      trend: "down",
-      points: 17,
-      modifier: "Mixed: not on today's named video-call list, so no live-call bonus was added on this run. Slack note: kept showing some signs of room presence through reactions after the last run. Tekmetric held from last verified pull: advisor pace was strong at $76.9k posted and $116.7k sold vs a $72.0k pace target through Apr 18.",
-      doing: "The strong production pace still helps, but there is not enough visible Slack leadership on this pass to climb.",
-      improve: "Needs more substance in posts and replies so the strong production pace has leadership proof beside it."
+      "name": "Cliffon Cantu",
+      "grade": "D",
+      "note": "Production pace helps, but room volume is still light",
+      "trend": "hold",
+      "points": 17,
+      "modifier": "Mixed: not on the latest named live-training list. Slack note: there was not enough fresh visible room volume to move him much on this rerun. Tekmetric held from the last verified pull: advisor pace was strong, which still helps.",
+      "doing": "The strong production pace still helps keep Cliffon alive on the board.",
+      "improve": "Needs more substance in posts and replies so the strong production pace has leadership proof beside it."
     },
     {
-      name: "Victor Naji",
-      grade: "D",
-      note: "GM lane - sold pace helps",
-      trend: "down",
-      points: 16,
-      modifier: "Mixed: not on today's named video-call list, so no live-call bonus was added on this run. Slack was quiet on this pass. Tekmetric held from last verified pull: NOW Sienna sold pace was ahead at $305.4k vs a $300.0k target, but posted was behind at $245.6k. GP% stayed neutral because the live gross-profit field was not confirmed.",
-      doing: "The sold side still helps a little, but the room did not get enough visible leadership from him on this pass.",
-      improve: "Needs more GM-level posts, replies, and posted sales pressure."
+      "name": "Victor Naji",
+      "grade": "D",
+      "note": "GM lane - sold pace still helps",
+      "trend": "up",
+      "points": 20,
+      "modifier": "Mixed: not on the latest named live-training list. Slack boost: showed a little more room life on this rerun. Tekmetric held from the last verified pull: NOW Sienna sold pace was ahead, but posted was behind, so the GM production side stays mixed. GP% stayed neutral because the live gross-profit field was not confirmed.",
+      "doing": "The sold side still helps a little, and the room presence was better than the last pass.",
+      "improve": "Needs more GM-level posts, replies, and posted-sales pressure."
     },
     {
-      name: "JT",
-      grade: "D",
-      note: "Joe Torres - needs more visible work",
-      trend: "down",
-      points: 13,
-      modifier: "Mixed: not on today's named video-call list, so no live-call bonus was added on this run. Slack was quiet on this pass. Tekmetric held from last verified pull: advisor pace was ahead at $74.2k posted and $77.4k sold vs a $72.0k pace target through Apr 18.",
-      doing: "Advisor pace still helps keep him from falling lower.",
-      improve: "Needs posts, replies, and more visible leadership reps to move beyond production credit."
+      "name": "JT",
+      "grade": "D",
+      "note": "Joe Torres - needs more visible work",
+      "trend": "hold",
+      "points": 13,
+      "modifier": "Mixed: not on the latest named live-training list. Slack stayed too light in the visible window to move him. Tekmetric held from the last verified pull: advisor pace was ahead of target, which still helps.",
+      "doing": "Advisor pace still helps keep him from falling lower.",
+      "improve": "Needs posts, replies, and more visible leadership reps to move beyond production credit."
     },
     {
-      name: "Timothy Smith",
-      grade: "F",
-      note: "GM lane - needs visible activity",
-      trend: "hold",
-      points: 5,
-      modifier: "Mixed: no confirmed live attendance from today's named attendee list and no tracked posts or replies in this channel window. Tekmetric held from last verified pull: PCC Newton sold pace was strong at $353.4k vs a $300.0k target, while posted was close but under at $282.7k. GP% stayed neutral because the live gross-profit field was not confirmed.",
-      doing: "The last verified store sold pace helps keep him from being a zero.",
-      improve: "Needs visible GM leadership in the room and live meeting participation. Right now there is not enough activity to climb."
+      "name": "Timothy Smith",
+      "grade": "F",
+      "note": "GM lane - needs visible activity",
+      "trend": "hold",
+      "points": 5,
+      "modifier": "Mixed: no confirmed live attendance from the latest named attendee list shared in this thread and no tracked posts or replies in the visible channel window. Tekmetric held from the last verified pull: PCC Newton sold pace was strong while posted was close but under pace. GP% stayed neutral because the live gross-profit field was not confirmed.",
+      "doing": "The last verified store sold pace helps keep him from being a zero.",
+      "improve": "Needs visible GM leadership in the room and live meeting participation. Right now there is not enough activity to climb."
     },
     {
-      name: "Ser Gray",
-      grade: "F",
-      note: "New join - now tracked",
-      trend: "hold",
-      points: 1,
-      modifier: "Neutral: no confirmed live attendance from today's named attendee list. Activity audit: joined the channel, 7 reactions given, 0 reactions received. Tekmetric neutral: no verified advisor/store production modifier matched on the last pull.",
-      doing: "Now tracked and has already reacted to the room.",
-      improve: "Needs live meeting participation and a first post or reply to start building a score."
+      "name": "Ser Gray",
+      "grade": "F",
+      "note": "New join - now tracked",
+      "trend": "hold",
+      "points": 1,
+      "modifier": "Neutral: no confirmed live attendance from the latest named attendee list shared in this thread. Activity audit: joined the channel and has not built enough visible room activity to move yet. Tekmetric neutral: no verified advisor or store production modifier matched on the last pull.",
+      "doing": "Still tracked, but there was not enough fresh movement to climb on this rerun.",
+      "improve": "Needs live meeting participation and a first post or reply to start building a real score."
     },
     {
-      name: "Jim Earle",
-      grade: "F",
-      note: "New join - now tracked",
-      trend: "hold",
-      points: 1,
-      modifier: "Neutral: no confirmed live attendance from today's named attendee list. Activity audit: joined the channel before the current run. Tekmetric neutral: no verified advisor/store production modifier matched on the last pull.",
-      doing: "Jim is visible in the channel roster and officially tracked.",
-      improve: "Needs live meeting participation, a first post, a reply, or reaction pattern to get on the board."
+      "name": "Jim Earle",
+      "grade": "F",
+      "note": "New join - now tracked",
+      "trend": "hold",
+      "points": 1,
+      "modifier": "Neutral: no confirmed live attendance from the latest named attendee list shared in this thread. Activity audit: visible in the channel roster, but still no meaningful room volume. Tekmetric neutral: no verified advisor or store production modifier matched on the last pull.",
+      "doing": "Jim is still officially tracked on the board.",
+      "improve": "Needs live meeting participation, a first post, or a reply pattern to get moving."
     },
     {
-      name: "Demetrius Latkos",
-      grade: "F",
-      note: "No visible work on this pass",
-      trend: "down",
-      points: 0,
-      modifier: "Neutral: not on today's named video-call list and no fresh visible Slack actions were identified on this run. Tekmetric neutral: no verified advisor/store production modifier matched on the last pull.",
-      doing: "There was not enough visible work on this pass to hold a score.",
-      improve: "Needs a first strong Slack post, reply, or proof of work so the board has something real to score."
+      "name": "Demetrius Latkos",
+      "grade": "F",
+      "note": "No visible work on this rerun",
+      "trend": "hold",
+      "points": 0,
+      "modifier": "Neutral: not on the latest named live-training list and no fresh visible Slack actions were identified on this rerun. Tekmetric neutral: no verified advisor or store production modifier matched on the last pull.",
+      "doing": "There was not enough visible work on this rerun to hold a score.",
+      "improve": "Needs a first strong Slack post, reply, or proof of work so the board has something real to score."
     },
     {
-      name: "Jason Bennett1017",
-      grade: "F",
-      note: "Quiet here - below pace on last verified pull",
-      trend: "hold",
-      points: 0,
-      modifier: "Ding: no confirmed live attendance from today's named attendee list and no tracked posts, replies, or reactions in the visible channel window. Tekmetric held from last verified pull: posted $36.4k and sold $44.5k were both below the $72.0k advisor pace target through Apr 18.",
-      doing: "Not enough visible activity in the room yet.",
-      improve: "Needs immediate Slack participation, live meeting participation, and a production push because both posted and sold were below pace on the last verified pull."
+      "name": "Jason Bennett1017",
+      "grade": "F",
+      "note": "Quiet here - below pace on last verified pull",
+      "trend": "hold",
+      "points": 0,
+      "modifier": "Ding: no confirmed live attendance from the latest named attendee list shared in this thread and no tracked posts, replies, or reactions in the visible channel window. Tekmetric held from the last verified pull: posted and sold were both below the advisor pace target.",
+      "doing": "Not enough visible activity in the room yet.",
+      "improve": "Needs immediate Slack participation, live meeting participation, and a production push because both posted and sold were below pace on the last verified pull."
     }
   ]
 };
